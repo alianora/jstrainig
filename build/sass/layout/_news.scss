@@ -1,0 +1,40 @@
+.img {
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  height: 550px;
+  background: #a3bc3f;
+}
+
+.container {
+  height: 100%;
+}
+
+.h1 {
+  text-align: center;
+  color: white;
+}
+
+.premieres {
+  padding: 25px 0;
+  width: 100%;
+  background: #272A2D;
+
+  &-container {
+    height: 100%;
+    display: flex;
+    margin-top: 30px;
+
+    &__poster {
+      width: 20%;
+      height: 525px;
+      margin: 0 12px;
+      background: purple;
+
+      &:after {
+        height: 20%;
+        background: white;
+      }
+    }
+  }
+}

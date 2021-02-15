@@ -1,0 +1,14 @@
+.slick-arrow {
+  width: 52px;
+  height: 52px;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  &.slick-prev {
+    left: calc(50% - 655px);
+  }
+  &.slick-next {
+    right: calc(50% - 655px);
+  }
+}

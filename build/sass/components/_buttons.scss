@@ -1,14 +1,35 @@
 .slick-arrow {
   width: 52px;
   height: 52px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+
   &.slick-prev {
-    left: calc(50% - 655px);
+    color: black;
+    left: 9%;
   }
+
   &.slick-next {
-    right: calc(50% - 655px);
+    color: black;
+    right: 9%;
   }
+}
+
+.buy {
+  display: inline-block;
+  text-decoration: none;
+  padding: 17px 83px;
+  text-align: center;
+  color: white;
+  background: #02A346;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  position: absolute;
+  left: 17px;
+  right: 17px;
+  top: 65%;
 }

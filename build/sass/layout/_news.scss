@@ -8,11 +8,28 @@
 
 .container {
   height: 100%;
+  padding: 0 145px;
+}
+
+.banner .slide-item {
+  height: 550px;
+  width: 100%;
 }
 
 .h1 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 100%;
   text-align: center;
   color: white;
+
+  .city {
+    color: #fa3030;
+  }
+}
+
+.slick-margin{
+  margin: 0 158px;
 }
 
 .premieres {
@@ -26,14 +43,26 @@
     margin-top: 30px;
 
     &__poster {
+      display: flex;
+      flex-direction: column;
+      position: relative;
       width: 20%;
       height: 525px;
       margin: 0 12px;
-      background: purple;
 
-      &:after {
-        height: 20%;
-        background: white;
+      &__after {
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 418px;
+        height: 40%;
+        background: #fff;
+        transition: all .3s;
+
+        &:hover {
+          top: 315px;
+        }
       }
     }
   }

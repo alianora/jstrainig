@@ -58,16 +58,16 @@ $(document).ready(function (){
                 .siblings(".content")
                 .slideUp(200);
             $(".set > a i")
-                .removeClass("fa-minus")
-                .addClass("fa-plus");
+                .removeClass("accordion-up")
+                .addClass("accordion-down");
         } else {
             $(".set > a i")
-                .removeClass("fa-minus")
-                .addClass("fa-plus");
+                .removeClass("accordion-up")
+                .addClass("accordion-down");
             $(this)
                 .find("i")
-                .removeClass("fa-plus")
-                .addClass("fa-minus");
+                .removeClass("accordion-down")
+                .addClass("accordion-up");
             $(".set > a").removeClass("active");
             $(this).addClass("active");
             $(".content").slideUp(200);

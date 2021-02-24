@@ -24,6 +24,28 @@
     background-repeat: no-repeat;
     transform: rotate(180deg) translateY(50%);
   }
+
+  &.accordion-button{
+    left: 0;
+    top: 0;
+    color: black;
+    background: none;
+    border: 1px solid #EEF0F1;
+
+    &.accordion-down {
+      background-image: url(../img/icons/arrow-left.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: rotate(-90deg);
+    }
+
+    &.accordion-up {
+      background-image: url(../img/icons/arrow-left.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .buy {

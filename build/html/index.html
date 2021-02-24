@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+<!--    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">-->
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+<!--    <script src="jquery.fancybox.min.js"></script>-->
 </head>
 
 <body>
@@ -231,6 +234,27 @@
             </div>
 
         </div>
+        </div>
+
+        <div class="fancy">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="mb-0">
+                            <a data-fancybox data-src="#trueModal" href="javascript:;" class="btn btn-primary">Click!</a>
+                        </p>
+
+                        <div style="display: none;max-width:600px; max-height: 400px" id="trueModal">
+                            <div class="text">
+                                <h3>Готово!</h3>
+                                <p>LP. HEART TO MOUTH TOUR</p>
+                                <p>Событие успешно занесено в ваш календарь.</p>
+                                <p><button data-fancybox-close class="btn-close">Ок, Спасибо</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

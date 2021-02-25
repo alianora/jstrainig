@@ -56,15 +56,16 @@
   td {
     width: 130px;
     text-align: center;
-
-    &.price {
-      font-weight: 600;
-
-      span {
-        font-size: 18px;
-      }
-    }
   }
+  }
+
+  .price {
+    text-align: end;
+    font-weight: 600;
+
+    span {
+      font-size: 18px;
+}
 
   //&.quantity {
   //  position: relative;
@@ -88,7 +89,7 @@
   font-size: 14px;
 
   .tickets-info {
-    margin: 15px 0;
+    margin: 15px auto;
     display: flex;
     font-weight: bold;
     font-size: 14px;
@@ -115,6 +116,7 @@
 
 .concert-date {
   padding: 17px 0;
+  margin: 0 auto;
 }
 
 .calendar {
@@ -131,12 +133,12 @@
 
 .place {
   color: #18191A;
-  margin: 15px 0 0 50px;
+  margin: 15px 0;
   padding: 4px 34px 4px;
 }
 
 a {
-  margin: auto 0;
+  margin: auto 0 auto auto;
 
   .download {
     @extend .calendar;
@@ -144,5 +146,17 @@ a {
     text-decoration: underline;
     color: #505050;
     margin: 0;
+  }
+}
+
+.summary {
+
+  table {
+    margin-left: auto;
+  }
+
+  .quantity {
+    text-align: end;
+    width: 90px;
   }
 }

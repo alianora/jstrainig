@@ -48,7 +48,7 @@
   }
 }
 
-.buy {
+.btn {
   display: inline-block;
   text-decoration: none;
   padding: 17px 83px;
@@ -56,6 +56,9 @@
   color: white;
   background: #02A346;
   border-radius: 5px;
+}
+
+.buy {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -66,6 +69,7 @@
 }
 
 .btn-close {
+  margin-top: 72px;
    background: none;
    color: #02A346;
    font-weight: bold;

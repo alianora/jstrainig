@@ -51,10 +51,12 @@ ul.tabs{
   font-size: 18px;
   line-height: 120%;
   color: #18191A;
-  margin: 20px 24px;
+  margin: 20px 0;
 }
 
 .map {
+  padding: 0 24px;
+
   @include point(md-down){
     margin: 23px 0;
   }

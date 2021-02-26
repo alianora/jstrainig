@@ -1,21 +1,15 @@
 .accordion-container{
   background-color: white;
   height: auto;
-  padding: 40px 100px;
-  margin: 0 190px;
+  padding: 40px 25px;
+  margin: 0 165px;
 }
-//.accordion-container > h2{
-//  text-align: center;
-//  color: #fff;
-//  padding-bottom: 5px;
-//  margin-bottom: 20px;
-//padding-bottom: 15px;
-//border-bottom: 1px solid #ddd;
-//}
+
 .set{
   position: relative;
   width: 100%;
   height: auto;
+  margin-bottom: 30px;
   //background-color: #f5f5f5;
 }
 .set > a{
@@ -55,7 +49,7 @@
 
   td {
     width: 130px;
-    text-align: center;
+    text-align: left;
   }
   }
 
@@ -66,30 +60,16 @@
     span {
       font-size: 18px;
 }
-
-  //&.quantity {
-  //  position: relative;
-  //  //left: 0;
-  //}
-  //
-  //&.date {
-  //  position: relative;
-  //  //left: 45px;
-  //}
-  //
-  //&.sum {
-  //  position: relative;
-  //  //left: 54px;
-  //}
 }
 
 .tickets{
   margin-top: 15px;
   display: flex;
   font-size: 14px;
+  color: #505050;
 
   .tickets-info {
-    margin: 15px auto;
+    margin: 15px auto 15px 0;
     display: flex;
     font-weight: bold;
     font-size: 14px;
@@ -139,6 +119,8 @@
 
 a {
   margin: auto 0 auto auto;
+  font-size: 14px;
+  color: #505050;
 
   .download {
     @extend .calendar;
@@ -153,10 +135,14 @@ a {
 
   table {
     margin-left: auto;
+    padding-top: 10px;
+    border-top: 1px dashed #939699;
+    border-collapse: separate;
+    font-size: 14px;
   }
 
   .quantity {
     text-align: end;
-    width: 90px;
+    width: 120px;
   }
 }

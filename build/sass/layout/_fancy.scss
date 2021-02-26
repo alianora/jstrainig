@@ -1,8 +1,92 @@
-.text {
+.modal-info {
   text-align: center;
   padding: 110px 150px;
 
   p {
     margin-top: 25px;
   }
+}
+
+.card, .gallery, .dropdown-wrap {
+  margin: 15px 0;
+}
+
+.gallery-content {
+  a {
+    text-decoration: none;
+
+    img {
+      margin: 6px;
+      width: 312px;
+      height: 196px;
+    }
+  }
+}
+
+.dropdown-wrap {
+  a {
+    color: white;
+    background-color: #18191A;
+    text-decoration: none;
+    padding: 15px 10px;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+#top-nav{min-height: 50px;}
+
+#top-nav ul{
+  background-color: #010101;
+  list-style: none;
+}
+#top-nav ul li{
+  display: inline-block;
+}
+
+#top-nav ul li a{
+  display: block;
+  color:#f9f9f9;
+  padding: 10px 20px;
+}
+#top-nav ul li a:hover{background-color: #666;}
+
+/* Dropdown */
+li.dropdown{position: relative;}
+ul.dropdown-menu{
+  position: absolute;
+  min-width: 120px;
+  height: 100px;
+  overflow: auto;
+}
+ul.dropdown-menu li{
+  display: block !important;
+  white-space: nowrap;
+}
+
+/* Sub Dropdown */
+ul.dropdown-menu ul.dropdown-menu{
+  left: 100%;
+  top: 0;
+  background-color: #f00 !important;
+}
+
+/* Display none by Default */
+ul.dropdown-menu{
+  display: none;
+}
+
+.selected {
+  background-color:red;
+}
+
+ul.dropdown-menu {
+  display: none;
+}
+
+.selected {
+  background-color:red;
 }

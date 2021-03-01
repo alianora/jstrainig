@@ -102,4 +102,33 @@ $(document).ready(function () {
 
     });
 
+    $.getJSON( "mock/accordion-content.json", function( data ) {
+        var items = [];
+        $.each( data, function( key, val ) {
+            console.log(data);
+//var set_content =
+//             items.push("<div class='set'><a href='javascript:void(0)'><i class='slick-arrow accordion-button accordion-down'></i>"+
+//                 + val.title +
+//                 + "<table class='sale-data'><tr>" +
+//                 + "<td>"+ val.quantity +" шт.</td>" +
+//                 + "<td>"+ val.date +"</td>" +
+//                 + "<td class='price'><span class='price span>'>"+
+//                 + val.price +
+//                 + "</span> грн.</td></tr></table></a></div>");
+
+            var content = "<p>" + val.title + "</p>";
+
+            items.push(content);
+
+            console.log(val.title);
+            // var tickets_info =
+            //     "<div class='content'><div class='tickets'>";
+        });
+
+        $( "<div/>", {
+            "class": "set",
+            html: items.join( "" )
+        }).appendTo( "wrap accordion accordion-container" );
+    });
+
 });

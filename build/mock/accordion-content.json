@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Lenny Kravitz",
+    "quantity": 7,
+    "date": "10.10.2021",
+    "price": 9999,
+    "place": "Дворец Спорта (Киев)",
+    "time": "19:00",
+    "discount": 145
+  },
+  {
+    "title": "Антитела. Всеукраинский тур",
+    "quantity": 3,
+    "date": "13.12.2021",
+    "price": 4999,
+    "place": "Дворец Культуры (Киев)",
+    "time": "16:00",
+    "discount": 0
+  },
+  {
+    "title": "Concert LP. HEART TO MOUTH TOUR",
+    "quantity": 5,
+    "date": "24.02.2021",
+    "price": 4200,
+    "place": "Дворец Спорта (Киев)",
+    "time": "20:00",
+    "discount": 190
+  },
+  {
+    "title": "Lenny Kravitz",
+    "quantity": 7,
+    "date": "10.10.2020",
+    "price": 9999,
+    "place": "Дворец Спорта (Киев)",
+    "time": "19:00",
+    "discount": 145
+  },
+  {
+    "title": "Lenny Kravitz",
+    "quantity": 7,
+    "date": "10.10.2020",
+    "price": 9999,
+    "place": "Дворец Спорта (Киев)",
+    "time": "19:00",
+    "discount": 145
+  },
+  {
+    "title": "Lenny Kravitz",
+    "quantity": 7,
+    "date": "10.10.2020",
+    "price": 9999,
+    "place": "Дворец Спорта (Киев)",
+    "time": "19:00",
+    "discount": 145
+  },
+  {
+    "title": "Lenny Kravitz",
+    "quantity": 7,
+    "date": "10.10.2020",
+    "price": 9999,
+    "place": "Дворец Спорта (Киев)",
+    "time": "19:00",
+    "discount": 145
+  }
+]

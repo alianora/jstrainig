@@ -27,39 +27,39 @@
     "discount": 190
   },
   {
-    "title": "Lenny Kravitz",
-    "quantity": 7,
-    "date": "10.10.2020",
-    "price": 9999,
-    "place": "Дворец Спорта (Киев)",
-    "time": "19:00",
-    "discount": 145
+    "title": "Событие 1",
+    "quantity": 14,
+    "date": "31.05.2021",
+    "price": 19999,
+    "place": "Дворец Чего-то (Киев)",
+    "time": "15:00",
+    "discount": 1
   },
   {
-    "title": "Lenny Kravitz",
-    "quantity": 7,
-    "date": "10.10.2020",
-    "price": 9999,
-    "place": "Дворец Спорта (Киев)",
-    "time": "19:00",
-    "discount": 145
+    "title": "Событие 2",
+    "quantity": 134,
+    "date": "24.06.2022",
+    "price": 99999,
+    "place": "Дворец Дворцовый (Киев)",
+    "time": "21:00",
+    "discount": 10000
   },
   {
-    "title": "Lenny Kravitz",
-    "quantity": 7,
-    "date": "10.10.2020",
-    "price": 9999,
-    "place": "Дворец Спорта (Киев)",
-    "time": "19:00",
-    "discount": 145
+    "title": "Событие 3",
+    "quantity": 8,
+    "date": "11.11.2021",
+    "price": 8888,
+    "place": "Спортивный Дворец (Киев)",
+    "time": "13:00",
+    "discount": 15
   },
   {
-    "title": "Lenny Kravitz",
-    "quantity": 7,
-    "date": "10.10.2020",
-    "price": 9999,
-    "place": "Дворец Спорта (Киев)",
-    "time": "19:00",
-    "discount": 145
+    "title": "Событие 4",
+    "quantity": 55,
+    "date": "01.09.2023",
+    "price": 5500,
+    "place": "Дворец Первосентябрьский (Киев)",
+    "time": "10:00",
+    "discount": 0
   }
 ]

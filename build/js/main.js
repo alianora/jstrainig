@@ -108,18 +108,50 @@ $(document).ready(function () {
         var items = '';
         $.each(data, function (key, val) {
 
-            var item =
-                "<div class='set'>" +
-                "<a href='javascript:void(0)'><i class='slick-arrow accordion-button accordion-down'></i>" +
-                +val.title +
-                +"<table class='sale-data'><tr>" +
-                +"<td>" + val.quantity + " шт.</td>" +
-                +"<td>" + val.date + "</td>" +
-                +"<td class='price'><span class='price span>'>" +
-                +val.price +
-                +"</span> грн.</td></tr></table></a></div>";
+            var ticket_title = '<div class="set">' +
+                '<a href="javascript:void(0)"><i class="slick-arrow accordion-button accordion-down"></i>'
+                + val.title +
+                '<table class="sale-data"><tr><td>'
+                + val.quantity +
+                ' шт.</td><td>'
+                + val.date +
+                '</td><td class="price"><span class="price span">'
+                + val.price +
+                '</span> грн.</td></tr></table></a>';
+
+            var ticket_content = '<div class="content">' +
+                '<div class="tickets">' +
+                '<div class="tickets tickets-info">' +
+                '<i class="tickets-icon"></i><p><span>X'
+                + val.quantity +
+                '</span>шт.</p></div>' +
+                '<div class="concert-date"><div class="place">'
+                + val.place +
+                '</div><div class="calendar">'
+                + val.date + ', ' + val.time +
+                '<span>34 дней 02:41</span></div></div>' +
+                '<a href="javascript:void(0)">' +
+                '<div class="download">Скачать e-ticket</div></a></div>' +
+                '<a href="javascript:void(0)">Посмотреть все билеты</a>' +
+                '<div class="summary">' +
+                '<table><tr>' +
+                '<td>Количество:</td>' +
+                '<td class="summary quantity">'
+                + val.quantity +
+                ' шт.</td></tr>' +
+                '<tr><td>Скидка:</td>' +
+                '<td class="summary quantity">'
+                + val.discount +
+                ' грн.</td></tr>' +
+                '<tr><td>Сумма:</td>' +
+                '<td class="price"><span class="price span">'
+                + val.price +
+                '</span> грн.</td></tr></table></div></div></div>';
+
+                var item = ticket_title + ticket_content;
+
             items = items + item;
-            //console.log(items);
+            // console.log(items);
             // var tickets_info =
             //     "<div class='content'><div class='tickets'>";
         });
@@ -128,7 +160,7 @@ $(document).ready(function () {
         //     "class": "set",
         //     html: items.join( "" )
         // }).appendTo( "wrap accordion accordion-container" );
-        console.log(items,typeof items);
+        // console.log(items,typeof items);
         $(items).appendTo(".accordion-container");
     });
 

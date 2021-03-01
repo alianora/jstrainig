@@ -50,8 +50,7 @@ $(document).ready(function () {
 
         $('.map-frame').html(embed);
     });
-
-    $(".set > a").on("click", function () {
+    $(document).on('click', '.set > a', function (){
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");
             $(this)
@@ -75,6 +74,9 @@ $(document).ready(function () {
                 .siblings(".content")
                 .slideDown(200);
         }
+    })
+    $(".set > a").on("click", function () {
+
     });
 
     $(function () {
@@ -102,33 +104,32 @@ $(document).ready(function () {
 
     });
 
-    $.getJSON( "mock/accordion-content.json", function( data ) {
-        var items = [];
-        $.each( data, function( key, val ) {
-            console.log(data);
-//var set_content =
-//             items.push("<div class='set'><a href='javascript:void(0)'><i class='slick-arrow accordion-button accordion-down'></i>"+
-//                 + val.title +
-//                 + "<table class='sale-data'><tr>" +
-//                 + "<td>"+ val.quantity +" шт.</td>" +
-//                 + "<td>"+ val.date +"</td>" +
-//                 + "<td class='price'><span class='price span>'>"+
-//                 + val.price +
-//                 + "</span> грн.</td></tr></table></a></div>");
+    $.getJSON("mock/accordion-content.json", function (data) {
+        var items = '';
+        $.each(data, function (key, val) {
 
-            var content = "<p>" + val.title + "</p>";
-
-            items.push(content);
-
-            console.log(val.title);
+            var item =
+                "<div class='set'>" +
+                "<a href='javascript:void(0)'><i class='slick-arrow accordion-button accordion-down'></i>" +
+                +val.title +
+                +"<table class='sale-data'><tr>" +
+                +"<td>" + val.quantity + " шт.</td>" +
+                +"<td>" + val.date + "</td>" +
+                +"<td class='price'><span class='price span>'>" +
+                +val.price +
+                +"</span> грн.</td></tr></table></a></div>";
+            items = items + item;
+            //console.log(items);
             // var tickets_info =
             //     "<div class='content'><div class='tickets'>";
         });
 
-        $( "<div/>", {
-            "class": "set",
-            html: items.join( "" )
-        }).appendTo( "wrap accordion accordion-container" );
+        // $( "<div/>", {
+        //     "class": "set",
+        //     html: items.join( "" )
+        // }).appendTo( "wrap accordion accordion-container" );
+        console.log(items,typeof items);
+        $(items).appendTo(".accordion-container");
     });
 
 });
